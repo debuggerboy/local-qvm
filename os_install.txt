@@ -1,0 +1,1 @@
+qemu-system-x86_64 -name phre4k3r -m 512 -hda hitb-0s1.hd0.img -cdrom ../alpine-virt-3.10.3-x86_64.iso -boot d -device e1000,netdev=net0 -netdev user,id=net0

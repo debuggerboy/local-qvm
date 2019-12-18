@@ -1,0 +1,3 @@
+sudo qemu-system-x86_64 -name phre4k3r -m 512 -hda hitb-0s1.hd0.img -boot c -device e1000,netdev=net0,mac="DE:AD:BE:EF:00:00" -netdev tap,id=net0,script="/home/anish/labs/hitb/0s1/qemu-ifup.sh" -nographic
+sudo /home/anish/labs/hitb/0s1/qemu-ifdown.sh
+sudo iptables -t nat -D POSTROUTING -o wlx503eaab0800a -j MASQUERADE
